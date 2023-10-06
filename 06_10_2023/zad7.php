@@ -1,9 +1,9 @@
 <?php
     function Zad7a($number1, $number2, $number3)
     {
-        if($number1 > $number2 && $number1 > $number3)
+        if($number1 < $number2 && $number1 < $number3)
             echo "$number1 <br>";
-        else if($number2 > $number3)
+        else if($number2 < $number3)
             echo "$number2 <br>";
         else 
             echo "$number3 <br>";
@@ -12,11 +12,11 @@
     {
         switch($number1)
         {
-            case $number1 > $number2 
-                 && $number1 > $number3:
+            case $number1 < $number2 
+                 && $number1 < $number3:
                  echo "$number1 <br>";
                  break;
-            case $number2 > $number3:
+            case $number2 < $number3:
                 echo "$number2 <br>";
                 break;
             default:
