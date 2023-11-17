@@ -1,0 +1,1 @@
+użycie switch ułatwia pisanie kodu i sprawia że jest bardziej przejrzyszty. poza tym jeśli ustawimy mnóstwo if'ów i każdym porównujemy te samą wartość to łamiemy zasadę KISS.
