@@ -1,0 +1,2 @@
+Pętle pozwalają programiście na to żeby kod sam się powtarzał, określoną ilość razy
+Dzięki temu jest w stanie ograniczyć ilość kodu oraz zautomatyzować, uprościć pewien proces
