@@ -32,3 +32,4 @@
        echo "Dysleksja </br>";
     if(isset($_POST['disability']))
        echo "Niepełnosprawność </br>";
+?>
