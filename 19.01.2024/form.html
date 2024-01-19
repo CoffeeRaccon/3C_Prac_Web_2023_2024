@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularz</title>
+        <meta charset="UTF-8">
+
+        <style>
+            #form
+            {
+                font-weight: bold;
+                font-size: medium;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="formScript.php" method="post">
+            <p id="form">Formularz Rejestracyjny</p>
+            Imię:</br>
+            <input type="text" name="name" size="12"></br>
+            Nazwisko:</br>
+            <input type="text" name="surname" size="12"></br>
+            Imię siostry matki stryja od strony ojca:</br>
+            <input type="text" name="theNameOfTheSisterOfTheUnclesMotherFromHisFathersSide" size="12"></br>
+            
+            Numer Telefonu "Patern: 123-123-123":</br>
+            <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></br>
+
+            <p>Profil</p>
+            <input type="radio" value="Informatyk" name="prof">Informatyk</br>
+            <input type="radio" value="Programista" name="prof">Programista</br>
+            <input type="radio" value="Elektronik" name="prof">Elektronik</br>
+            <p>Wybór Języka</p>
+            <select name="languages[] multiple" >
+                <option value="Angielski">Język Angielski</option>
+                <option value="Norweski">Język Norweski</option>
+                <option value="Język Małp">Język Małp</option>
+            </select>
+            <p>Dodatkowe Informacje</p>
+            <p><input type="checkbox" name="dyslexia">Dysleksja</p>
+            <p><input type="checkbox" name="disability">Niepełnosprawność</p>
+
+            <input type="submit" value="Wyślij" name="send">
+        </form>
+    </body>
+</html>
