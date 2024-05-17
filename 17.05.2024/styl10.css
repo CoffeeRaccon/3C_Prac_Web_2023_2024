@@ -1,0 +1,45 @@
+body{
+    font-family: Helvetica;
+}
+#leftHeader, #rightHeader{
+    background-color: rgb(146, 184, 112);
+    text-align: center;
+    width: 50%;
+    height: 170px;
+    float: left;
+}
+#banner, #footer{
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+    clear: both;
+}
+#leftMainBlock, #rightMainBlock{
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+#linkZamowienie{
+    background-image: url("cukierki1.jpg");
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+table, tr, td{
+    border-style: dashed;
+    border-color: green;
+    border-width: 2px;
+    padding: 20px;
+    margin: 30px;
+}
+h1{
+    letter-spacing: 20px;
+    font-size: 250%;
+}
+.colorInput{
+    width: 50px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fabryka cukierków</title>
+        <link rel="stylesheet" type="text/css" href="styl10.css">
+    </head>
+    <body>
+        <div id="leftHeader">
+            <a id="linkZamowienie" href="zamowienie.html">
+               Zamów cukierki
+            </a>
+        </div>
+        <div id="rightHeader">
+            <a href="index.html">
+                <img src="logotyp.png" alt="Nasze logo">
+            </a>
+        </div>
+        <div id="banner">
+            <h1>Strefa Zamówień</h1>
+        </div>
+        <div id="leftMainBlock">
+            Numer kształtu:<br>
+            <input type="number" id="candyFormInput"><br>
+
+            Skomponuj swój kolor, podaj RGB<br>
+            R<input type="number" id="colorInputR" class="colorInput"> 
+            G<input type="number" id="colorInputG" class="colorInput">
+            B<input type="number" id="colorInputB" class="colorInput"> <br>
+
+            <button onclick="operateOrder()">Zamówienie</button>
+            <p id="orderParagraph">Twoje Zamówienie</p>
+            <button id="colorButton">Kolor</button>
+        </div>
+        <div id="rightMainBlock">
+            <h2>Nasza oferta</h2> <br>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić <br>dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            Autory strony: <b>Konrad Banakiewicz</b>
+        </div>
+    </body>
+    <script>
+        function operateOrder()
+        {
+            let candyForm = document.getElementById("candyFormInput").value;
+            
+            switch(candyForm)
+            {
+                case '1':
+                    candyForm = "cytryna";
+                    break;
+                case '2':
+                    candyForm = "liść";
+                    break;
+                case '3':
+                    candyForm = "banan";
+                    break;
+                default:
+                    candyForm = "inny";
+            }
+            document.getElementById("orderParagraph").innerText = "Twoje zamówienie to cukierek " + candyForm;
+
+            let colorR = document.getElementById("colorInputR").value;
+            let colorG = document.getElementById("colorInputG").value;
+            let colorB = document.getElementById("colorInputB").value;
+
+            document.getElementById("colorButton").style.backgroundColor = "rgb("+ colorR + ',' + colorG + ',' + colorB + ')';
+        }
+    </script>
+</html>
